@@ -1,14 +1,7 @@
-commands: # Commands
-  wallet: true
-  discord: true
-  mapa: true
-  web: true
-  wiki: true
-  ayuda: true
-  presidente: true
-  ciudadano: true
+config:
+  request-expiration: 30
 
 # Number of citizens allowed per city, this value is not recommended to be changed if there are already citizens in cities.
 Citizens: 11
 # Invitation expire (seconds)
-Expire: 15
+expire: 15

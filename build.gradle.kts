@@ -8,6 +8,10 @@ plugins {
 group = "net.shibacraft.core"
 version = "0.0.1"
 
+    dependencies {
+        implementation(project(":api"))
+    }
+
 allprojects{
 
     apply(plugin = "java")
@@ -22,8 +26,8 @@ allprojects{
         maven("https://oss.sonatype.org/content/repositories/central")
         maven("https://repo.unnamed.team/repository/unnamed-public/")
     }
-    dependencies {
-        implementation(project(":api"))
+
+    dependencies{
         implementation("team.unnamed.common:commons-error:2.0.0-SNAPSHOT")
         implementation("me.fixeddev:commandflow-bukkit:0.5.0-SNAPSHOT")
         implementation("org.jetbrains:annotations:22.0.0")
@@ -32,5 +36,5 @@ allprojects{
         compileOnly("net.luckperms:api:5.3")
         compileOnly("org.projectlombok:lombok:1.18.22")
     }
-
 }
+

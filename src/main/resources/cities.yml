@@ -1,7 +1,10 @@
-#imSKJOL:
-  #nombre: Madrid
-  #displayname: Madrid
-  #ciudadanos:
-    #- imSKJOL
-    #- SKJOL
+cities:
+  aadasdasd:
+    city-name: ""
+    displayname: ""
+    owner: ""
+    members:
+      - ""
+      - ""
+    members-remaining: 2
   #restante: 9

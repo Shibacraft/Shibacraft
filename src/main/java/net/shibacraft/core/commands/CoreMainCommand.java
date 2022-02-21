@@ -5,6 +5,7 @@ import me.fixeddev.commandflow.annotated.annotation.Command;
 import net.shibacraft.core.CorePlugin;
 import net.shibacraft.core.file.FileMatcher;
 import org.bukkit.command.CommandSender;
+import org.jetbrains.annotations.NotNull;
 import team.unnamed.error.Errors;
 
 
@@ -13,12 +14,12 @@ public class CoreMainCommand implements CommandClass {
    
    private final FileMatcher fileMatcher;
    
-   public CoreMainCommand(CorePlugin plugin) {
+   public CoreMainCommand(@NotNull CorePlugin plugin) {
       this.fileMatcher = plugin.getFileMatcher();
    }
    
    @Command(names = "reload")
-   public void runReload(CommandSender sender){
+   public void runReload(@NotNull CommandSender sender){
       fileMatcher.getFiles().forEach((key, value) -> {
          try {
             value.reload();

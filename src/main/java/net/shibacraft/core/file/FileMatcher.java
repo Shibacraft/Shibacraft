@@ -27,6 +27,7 @@ public class FileMatcher implements Loader {
       files.put("cities", new YamlFile(plugin.getLoader(), "cities"));
       files.put("help", new YamlFile(plugin.getLoader(), "help"));
       files.put("wallet", new YamlFile(plugin.getLoader(), "wallet"));
+      files.put("data", new YamlFile(plugin.getLoader(), "data"));
    }
    
    
